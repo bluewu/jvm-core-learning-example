@@ -23,6 +23,11 @@ package org.jvmcore.classloader;
  */
 class FinalFieldClass {
     public static final String CONST_STR = "CONSTSTR";
+    public static int con = 33;
+
+    public FinalFieldClass(){
+        System.out.println("构造方法 init ");
+    }
 
     static {
         System.out.println("FinalFieldClass init");
